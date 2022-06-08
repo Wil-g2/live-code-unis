@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 
 WORKDIR /usr/app
-COPY package*.json .
+COPY package*.json ./
 RUN npm install
 EXPOSE 3333

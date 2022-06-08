@@ -8,3 +8,9 @@ services:
     volumes:
       - ./:/usr/app
     command: npm run dev
+    depends_on:
+      - mongo
+  mongo: 
+    image: mongo
+    ports:
+      - 27017:27017

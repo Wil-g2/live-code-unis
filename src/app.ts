@@ -8,7 +8,7 @@ class App {
     this.server = express();
     this.middleware();
     this.routes();
-    mongoose.connect("mongodb://localhost:27017/tasks");
+    mongoose.connect("mongodb://mongo:27017/tasks");
   }
 
   middleware() {
